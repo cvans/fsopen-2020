@@ -1,0 +1,10 @@
+title 0.6 spa new note
+
+note over browser:
+user writes a note and clicks save.
+JS even launches, redraws notes with new note, 
+and pushes new note to the server
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: HTTP Response 201 created, JSON Payload: note created
